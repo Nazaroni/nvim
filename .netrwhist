@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='C:/DD/login/features/steps'
+let g:netrw_dirhist_5='C:/DD/login/features'
+let g:netrw_dirhist_4='C:/DD/login'
+let g:netrw_dirhist_3='C:/DD/login/login'
+let g:netrw_dirhist_2='C:/DD/login'
+let g:netrw_dirhist_1='C:/DD'
+let g:netrw_dirhist_0='C:/DD/QA'
+let g:netrw_dirhist_9='C:/DD'
+let g:netrw_dirhist_8='C:/'
+let g:netrw_dirhist_7='C:/Users'
