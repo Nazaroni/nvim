@@ -77,6 +77,7 @@ endif
 let loaded_matchparen = 1
 let mapleader = " "
 
+tnoremap <Esc> <C-\><C-n>:q!<CR>
 nnoremap <leader>cP :lua require("contextprint").add_statement()<CR>
 nnoremap <leader>cp :lua require("contextprint").add_statement(true)<CR>
 
