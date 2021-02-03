@@ -3,7 +3,6 @@ set exrc " Wont open project .nvimrc without this here
 
 call plug#begin('~/.vim/plugged')
 
-
 call plug#end()
 
 let mapleader = " "
@@ -18,7 +17,6 @@ nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +25<CR>
 nnoremap <Leader>- :vertical resize -25<CR>
 nnoremap <Leader>rp :resize 100<CR>
-nnoremap <Leader>cpu a%" PRIu64 "<esc>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
