@@ -1,25 +1,35 @@
 language en_US
+
 set exrc " Wont open project .nvimrc without this here
+set tabstop=2 softtabstop=2
+set shiftwidth=2
 set nu
 set nowrap
 set relativenumber
 set hidden
 set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
 set scrolloff=8
 set incsearch
+set smartindent
+set termguicolors
+set signcolumn=yes
+set colorcolumn=80
 
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
 
+
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
+
+
+colorscheme gruvbox
 
 let mapleader = " "
 
