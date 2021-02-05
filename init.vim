@@ -1,7 +1,23 @@
 language en_US
 set exrc " Wont open project .nvimrc without this here
+set nu
+set nowrap
+set relativenumber
+set hidden
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set scrolloff=8
+set incsearch
+
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
 
 call plug#begin('~/.vim/plugged')
+Plug 'gruvbox-community/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
 
