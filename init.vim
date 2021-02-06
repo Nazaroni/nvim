@@ -25,6 +25,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'tomtom/tcomment_vim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'anott03/nvim-lspinstall'
 
 call plug#end()
 
