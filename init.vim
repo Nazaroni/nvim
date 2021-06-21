@@ -29,6 +29,11 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'anott03/nvim-lspinstall'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'mhinz/vim-startify'
+Plug 'liuchengxu/vim-which-key'
+
+" On-demand lazy load
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 call plug#end()
 
