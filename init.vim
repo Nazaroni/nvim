@@ -1,8 +1,11 @@
 "language en_US
 
+set encoding=utf-8
 set exrc " Wont open project .nvimrc without this here
-set tabstop=2 softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set backspace=indent,eol,start
 set nu
 set nowrap
 set relativenumber
@@ -11,15 +14,20 @@ set noerrorbells
 set scrolloff=8
 set incsearch
 set smartindent
-set termguicolors
 set signcolumn=yes
 set colorcolumn=80
+set expandtab
+set autoindent
 
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+syntax enable
 
+if (has('termguicolors'))
+    set termguicolors
+endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
@@ -29,13 +37,18 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'anott03/nvim-lspinstall'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
-
+Plug 'jiangmiao/auto-pairs'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 
 colorscheme gruvbox
 
 let mapleader = " "
+
+lua require 'colorizer'.setup()
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
@@ -57,6 +70,8 @@ nnoremap <leader>p "+p
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
+
+let g:airline_theme='gruvbox'
 
 let g:nvim_tree_side = 'right' "left by default
 let g:nvim_tree_width = 40 "30 by default, can be width_in_columns or 'width_in_percent%'
