@@ -41,6 +41,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 call plug#end()
 
 
@@ -169,3 +171,5 @@ highlight NvimTreeFolderIcon guibg=blue
 
 nmap <leader>1 :bp<CR>
 nmap <leader>2 :bn<CR>
+
+let g:deoplete#enable_at_startup = 1
