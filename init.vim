@@ -48,8 +48,6 @@ colorscheme gruvbox
 
 let mapleader = " "
 
-lua require 'colorizer'.setup()
-
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -72,6 +70,8 @@ vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
 
 let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemode=':t'
 
 let g:nvim_tree_side = 'right' "left by default
 let g:nvim_tree_width = 40 "30 by default, can be width_in_columns or 'width_in_percent%'
@@ -166,3 +166,6 @@ nnoremap <leader>n :NvimTreeFindFile<CR>
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
+
+nmap <leader>1 :bp<CR>
+nmap <leader>2 :bn<CR>
