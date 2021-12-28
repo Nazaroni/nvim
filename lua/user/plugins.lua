@@ -26,8 +26,8 @@ vim.cmd [[
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-  print("Protected Call for Packer fail. Holly shit!!!!")
-  -- or vim.notify("Protected Call for Packer fail. Holly shit!!!!")
+  print("Protected Call for Packer fail. Holy SHIT! We really ARE gonna die!")
+  -- or vim.notify("Protected Call for Packer fail.")
   return
 end
 
@@ -47,6 +47,11 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"     -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"   -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'} -- Plugins can have post-install/update hooks
+
+  -- Colorschemes
+  use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+  use 'folke/tokyonight.nvim'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
