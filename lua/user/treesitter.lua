@@ -20,4 +20,17 @@ configs.setup {
     enable = true,
     enable_autocmd = false,
   },
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_length = nil,
+    -- Setting colors
+    -- colors = {
+      -- Colors here
+    -- },
+    -- Term colors
+    -- termcolors = {
+      -- Term colors here
+    -- }
+  },
 }
